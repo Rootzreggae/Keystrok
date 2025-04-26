@@ -1,0 +1,19 @@
+repository:
+  # See https://developer.github.com/v3/repos/#edit for all available settings.
+  name: Keystrok
+  description: API key management and security dashboard
+  homepage: https://rootzreggae.github.io/Keystrok/
+  private: false
+
+branches:
+  - name: main
+    # Require status checks to pass before merging
+    protection:
+      # Required. Require status checks to pass before merging
+      required_status_checks:
+        # Required. Require branches to be up to date before merging.
+        strict: true
+        # Required. The list of status checks to require in order to merge into this branch
+        contexts: []
+      # Allow direct pushes from repository administrators
+      enforce_admins: false
